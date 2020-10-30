@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+const Wrapper = require("../lib/core");
+
+Wrapper(process.argv);
