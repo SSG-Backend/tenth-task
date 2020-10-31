@@ -50,9 +50,9 @@ module.exports = (function() {
       const refs = [];
       if (localRef) {
         refs.push(localRef);
-      if (remoteRef) {
-        refs.push(remoteRef)
-      }
+        if (remoteRef) {
+          refs.push(remoteRef)
+        }
       }
       return ["push", ...refs];
     },
