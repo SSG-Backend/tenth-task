@@ -1,26 +1,23 @@
 // function(exports, module, require, __filename, __dirname){
 
 const nopt = require('nopt');
-const execa = require("execa");
 const {log} = console;
 const utils = require("./core.utils");
 
-function Commando(commands) {
-  log()
-  utils.command(commands, function(command) {
-    // this.log(command);
+async function Commando(commands) {
+
+  const command = utils.createCommand(commands);
+  utils.initialize(function() {
+    // this.log(this.Execute)
+    this.Execute(...command);
   });
-  process.exit(9);
+
 }
 
-module.exports = async function Wrapper(commandline_args) {
+module.exports = function Wrapper(commandline_args) {
   const parsed = nopt({}, {}, commandline_args, 2);
-  const cmd = parsed.argv.remain.shift();
-  log(parsed)
-  log(cmd)
-// const commands = Commando(parsed);
-// const output = await execa("git", ["status"]);
-// log(output.stdout);
+  Commando(parsed.argv.original);
+
 }
 
 
