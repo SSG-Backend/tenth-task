@@ -1,23 +1,17 @@
 {
-  "name": "ginit",
+  "name": "node_CLI",
   "version": "1.0.0",
-  "description": "Automate basic git workflow",
+  "description": "",
   "main": "index.js",
-  "bin": {
-    "ginit": "./index.js"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "Git",
-    "CLI"
-  ],
-  "author": "DipoDre",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "@octokit/auth-basic": "^1.4.7",
-    "@octokit/rest": "^18.0.6",
+    "@octokit/rest": "^18.0.7",
     "chalk": "^4.1.0",
     "clear": "^0.1.0",
     "clui": "^0.3.6",
@@ -30,4 +24,3 @@
     "touch": "^3.1.0"
   }
 }
-
