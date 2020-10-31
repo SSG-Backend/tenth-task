@@ -1,10 +1,10 @@
 {
-  "name": "@michaeliyke/books",
+  "name": "@michaeliyke/bgits",
   "version": "1.0.0",
-  "main": "./lib/book.js",
+  "main": "./lib/bgit.js",
   "bin": {
-    "@michaeliyke/books": "./bin/books",
-    "books": "./bin/books"
+    "@michaeliyke/bgit": "./bin/bgit",
+    "books": "./bin/bgit"
   },
   "preferGlobal": true,
   "description": "A CLI tool for managing the book directory service",
@@ -12,7 +12,7 @@
     "test": "mocha -R spec"
   },
   "keywords": [
-    "book-directory",
+    "book-directory cli",
     "book-cli"
   ],
   "author": "Michael C. Iyke <ymichaelc@gmail.com>",
