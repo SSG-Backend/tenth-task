@@ -7,10 +7,12 @@ const utils = require("./core.utils");
 async function Commando(commands) {
 
   const command = utils.createCommand(commands);
-  utils.initialize(function() {
+  if (command) {
+    utils.initialize(function() {
     // this.log(this.Execute)
     this.Execute(...command);
   });
+  }
 
 }
 

@@ -1,7 +1,10 @@
 // function(exports, module, require, __filename, __dirname){
 const execa = require("execa");
 const errorHandler = require("./core.handlers");
+const ask = require("./ask");
 const {log} = console;
+
+
 module.exports = (function() {
 
   async function Execute() {
@@ -15,6 +18,10 @@ module.exports = (function() {
 
     Execute,
 
+    "generate-ignore": function() {
+      ask()
+    // this.createIgnoreFile(ask());
+    },
     log() {
       console.log.apply(null, arguments);
       return this;
