@@ -1,0 +1,28 @@
+{
+  "name": "node-git",
+  "version": "1.0.0",
+  "description": "cli app that runs some git actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "node-git": "./index.js"
+  },
+  "author": "Egbedokun Olayinka",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/auth-basic": "^1.4.7",
+    "@octokit/rest": "^18.0.8",
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "configstore": "^5.0.1",
+    "figlet": "^1.5.0",
+    "inquirer": "^7.3.3",
+    "lodash": "^4.17.20",
+    "minimist": "^1.2.5",
+    "simple-git": "^2.21.0",
+    "touch": "^3.1.0"
+  }
+}
