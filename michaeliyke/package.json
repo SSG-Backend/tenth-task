@@ -1,0 +1,31 @@
+{
+  "name": "@michaeliyke/bgits",
+  "version": "1.0.0",
+  "main": "./lib/bgit.js",
+  "bin": {
+    "@michaeliyke/bgit": "./bin/bgit",
+    "books": "./bin/bgit"
+  },
+  "preferGlobal": true,
+  "description": "A CLI tool for managing the book directory service",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "keywords": [
+    "book-directory cli",
+    "book-cli"
+  ],
+  "author": "Michael C. Iyke <ymichaelc@gmail.com>",
+  "dependencies": {
+    "nopt": "^4.0.1",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "hock": "^1.3.2",
+    "mocha": "^3.5.3",
+    "nock": "^9.0.22"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  }
+}
